@@ -1,5 +1,9 @@
 package common;
 
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+
 /**
  * 描述:
  * 自动装拆箱
@@ -50,5 +54,11 @@ public class IntegerUtil {
             System.out.println("integer5 == integer6");
         else
             System.out.println("integer5 != integer6");
+
+
+        HashSet<String> hashSet = new HashSet<>();
+
+        LinkedHashMap<Integer,String> linkedHashMap = new LinkedHashMap<>();
+        LinkedHashSet<String> linkedHashSet = new LinkedHashSet<>();
     }
 }

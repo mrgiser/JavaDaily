@@ -1,12 +1,9 @@
 package string;
 
 
-import http.HttpsClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * 描述:
@@ -27,12 +24,25 @@ public class StringTest {
         System.out.println(s1 == s3);
         System.out.println(s2 == s3);
 
-        char []s = {'a','b','c'};
+        char []s = {'a','b','c'}; //s只是一个指针
         String string1 = s.toString();
         String string2 = new String(s);
         LOGGER.info("s: " + s);
         LOGGER.info("string1: " + string1);
         LOGGER.info("string2: " + string2);
+
+
+        String str1= "str";
+        String str2= "ing";
+        String str3= "str" + "ing";
+        String str4= str1 + str2;
+
+        String str5="string";
+
+        System.out.println(str3 ==str4);
+        System.out.println(str4 == str5);
+        System.out.println(str3 == str5);
+
     }
 
 }
